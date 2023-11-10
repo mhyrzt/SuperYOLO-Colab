@@ -240,7 +240,7 @@ def test(data,
         # Plot images
         if plots: #and batch_i < 3: #zjq
             f = save_dir / f'test_batch{batch_i}_labels.png'  # labels
-            # f = '/home/data/zhangjiaqing/dataset/VEDAI/train_label/'+paths[0].split('/')[-1].replace('_co','_label') #zjq
+            # f = '/content/dataset/VEDAI/train_label/'+paths[0].split('/')[-1].replace('_co','_label') #zjq
             if input_mode == 'IR':
                 Thread(target=plot_images, args=(ir, targets, paths, f, names), daemon=True).start()
             else:

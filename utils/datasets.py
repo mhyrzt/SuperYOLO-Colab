@@ -390,9 +390,9 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
         self.mosaic_border = [-img_size // 2, -img_size // 2]
         self.stride = stride
         if hr_input== False:
-            self.img_path = '/home/data/zhangjiaqing/dataset/VEDAI/images/' #zjq the path for 512*512 images
+            self.img_path = '/content/dataset/VEDAI/images/' #zjq the path for 512*512 images
         else:
-            self.img_path = '/home/data/zhangjiaqing/dataset/VEDAI_1024/images/' #zjq the path for 1024*1024 images
+            self.img_path = '/content/dataset/VEDAI_1024/images/' #zjq the path for 1024*1024 images
 
 
         with open(path, "r") as file:
